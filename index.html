@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Adivina en que numero estoy pensando</title>
+  </head>
+  <body>
+    <h1>Adivina en que n&uacute;mero estoy pensando</h1>
+    <p>Seleccionamos un n&uacute;mero entre 1 y 100.
+      Intenta adivinar en 10 turnos o menos.
+      Te avisaremos si estas muy arriba o muy abajo.</p>
+    <div class="form">
+      <label for="campoSuposicion">Escribe un n&uacute;mero:</label>
+      <input type="text" id="campoSuposicion" class="campoSuposicion">
+      <input type="submit" value="Enviar numero" class="campoSuposicion">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    <script src="scripts/script.js" charset="utf-8"></script>
+  </body>
+</html>
