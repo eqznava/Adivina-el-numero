@@ -9,3 +9,35 @@ const guessField = document.querySelector('.guessField');
 
 let guessCount =1;
 let resetButton;
+
+function checkGuess(){
+  let userGuess = Number(guessField.value);
+  if (guessCount === 1) {
+    guesses.textContent = 'Intentos anteriores: ';
+  }
+  guesses.textContent += userGuess + ' ';
+
+  if (userGuess === randomNumber) {
+    lastResult.textContent = '¡Felicidades! ¡Lo adivinaste!';
+    lastResult.style.backgroundColor = 'green';
+    lowOrHi.textContent = '';
+    setGameOver();
+  } else if(guessCount === 10){
+    lastResult.textContent = '!!!Fin del Juego¡¡¡'
+    setGameOver();
+  }else {
+    lastResult.textContent = '¡Incorrecto!';
+    lastResult.style.backgroundColor = 'red';
+    if (userGuess < randomNumber) {
+      lowOrHi.textContent = '¡El numero esta muy bajo!';
+    }else if (userGuess > randomNumber) {
+      lowOrHi.textContent = '¡El numero esta muy grande!';
+    }
+  }
+
+  guessCount++;
+  guessField.value ='';
+  guessField.focus();
+}
+
+guessSubmit.addEventListener('click', checkGuess);
