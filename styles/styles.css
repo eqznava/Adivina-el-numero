@@ -6,7 +6,15 @@ body{
   width: 50%;
   max-width: 800px;
   min-width: 480px;
-  margin: 0 auto;
+  margin: 15px auto;
+  border: 2px solid silver;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 10px 5px 5px black;
+}
+
+.guessField{
+border-radius: 5px; 
 }
 
 .lastResult{
