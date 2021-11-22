@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Adivina en que numero estoy pensando</title>
-  </head>
-  <body>
-    <h1>Adivina en que n&uacute;mero estoy pensando</h1>
-    <p>Seleccionamos un n&uacute;mero entre 1 y 100.
-      Intenta adivinar en 10 turnos o menos.
-      Te avisaremos si estas muy arriba o muy abajo.</p>
-    <div class="form">
-      <label for="guessField">Escribe un n&uacute;mero:</label>
-      <input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Probar" class="guessSubmit">
-    </div>
+</head>
 
-    <div class="resultParas">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
-    </div>
+<body>
+    <section class="container">
+        <h1>Adivina en que n&uacute;mero estoy pensando</h1>
+        <p>Seleccionamos un n&uacute;mero entre 1 y 100. Intenta adivinar en 10 turnos o menos. Te avisaremos si estas muy arriba o muy abajo.</p>
+        <div class="form">
+            <label for="guessField">Escribe un n&uacute;mero:</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" value="Probar" class="guessSubmit">
+        </div>
+
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </section>
     <script src="scripts/script.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>

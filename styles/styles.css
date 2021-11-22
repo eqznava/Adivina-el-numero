@@ -1,23 +1,37 @@
-html{
-  font-family: sans-serif;
+html {
+    font-family: sans-serif;
 }
 
-body{
-  width: 50%;
-  max-width: 800px;
-  min-width: 480px;
-  margin: 15px auto;
-  border: 2px solid silver;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 10px 5px 5px black;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.guessField{
-border-radius: 5px; 
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    border: 2px solid silver;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 10px 5px 5px black;
 }
 
-.lastResult{
-  color: white;
-  padding: 3px;
+.guessField {
+    border-radius: 5px;
+}
+
+.lastResult {
+    color: white;
+    padding: 3px;
+}
+
+@media screen and (max-width:425px) {
+    h1 {
+        text-align: center;
+    }
 }
